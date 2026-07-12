@@ -100,7 +100,7 @@ lk.ijse.cmjd.research_tracker
    ./mvnw spring-boot:run
    ```
 
-5. **The API will be available at:** `http://localhost:8080`
+5. **The API will be available at:** `http://localhost:8081`
 
 6. **(Optional) Load sample data:**
    Execute `src/main/resources/sample-data.sql` in your MySQL client.
@@ -225,7 +225,7 @@ The `src/main/resources/sample-data.sql` file contains test data:
 ### 1. Register a New User
 
 ```
-POST http://localhost:8080/api/auth/signup
+POST http://localhost:8081/api/auth/signup
 Content-Type: application/json
 
 {
@@ -238,7 +238,7 @@ Content-Type: application/json
 ### 2. Login
 
 ```
-POST http://localhost:8080/api/auth/login
+POST http://localhost:8081/api/auth/login
 Content-Type: application/json
 
 {
@@ -250,7 +250,7 @@ Content-Type: application/json
 ### 3. Create a Project (use Bearer token)
 
 ```
-POST http://localhost:8080/api/projects
+POST http://localhost:8081/api/projects
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -268,7 +268,7 @@ Content-Type: application/json
 ### 4. Add a Milestone
 
 ```
-POST http://localhost:8080/api/projects/<project-id>/milestones
+POST http://localhost:8081/api/projects/<project-id>/milestones
 Authorization: Bearer <token>
 Content-Type: application/json
 
@@ -283,7 +283,7 @@ Content-Type: application/json
 ### 5. Upload a Document
 
 ```
-POST http://localhost:8080/api/projects/<project-id>/documents
+POST http://localhost:8081/api/projects/<project-id>/documents
 Authorization: Bearer <token>
 Content-Type: application/json
 
